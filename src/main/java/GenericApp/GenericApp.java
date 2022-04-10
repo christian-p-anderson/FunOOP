@@ -9,10 +9,10 @@ public class GenericApp {
         Animal arrayListHashMap;
         arrayListHashMap = new Animal();
 
-        Scanner myObj = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Select Animal Number (0-2)");
 
-        Integer animalNumber = Integer.valueOf(myObj.nextLine());
+        int animalNumber = scan.nextInt();
         String animal = arrayListHashMap.getAnimal(animalNumber);
         System.out.println(animal);
 
